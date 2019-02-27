@@ -43,7 +43,8 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/storefront" render={() => {
             return <StoreFront
-              addToShoppingCart={this.addToShoppingCart} />
+              addToShoppingCart={this.addToShoppingCart}
+              shoppingCart={this.state.shoppingCart} />
           }} />
           <Route path="/shoppingcart" render={() => {
             return <ShoppingCart
